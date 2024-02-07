@@ -10,8 +10,6 @@ connectMongoDb("mongodb://localhost:27017/user-1");
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
-// creating a structure for database
 app.use("/user",userRouter);
 
 
